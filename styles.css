@@ -11,7 +11,7 @@
     --error-color: #FF6347;
     --success-color: #32CD32;
     --warning-color: #FFA500;
-    --info-color: #1E90FF;
+    --info-color:rgb(255, 255, 255);
 }
 html{
     scroll-behavior: smooth;
