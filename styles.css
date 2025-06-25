@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #333446;
+    --secondary-color: #7F8CAA;
+    --accent-color: #B8CFCE;
+    --text-color: #EAEFEF;
+    --highlight-color: #F0E68C;
+    --error-color: #FF6347;
+    --success-color: #32CD32;
+    --warning-color: #FFA500;
+    --info-color: #1E90FF;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    background-color: var(--primary-color);
+}
+a{
+    color: var(--info-color);
+    text-transform: capitalize;
+}
+a:visited{
+    color: var(--text-color);
+}
+a:hover{
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ HEADER SECTION */
+header{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+header a{
+    color: var(--accent-color);
+    text-decoration: none;
+}
+.navbar{
+    border-bottom: 1px solid var(--primary-color);
+    padding: 10px;
+    color: var(--text-color);
+}
+.list-group-item{
+    color: var(--text-color);
+}
+
+/*------------------------------------------------------------------------------------------------------------------------ STICKY HEADER SECTION */
+.contact-sticky{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
+.sticky-header{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    background-color: var(--secondary-color);
+    padding: 0px 20px;
+    z-index: 1000;
+    align-items: center !important;
+    text-align: center !important;
+}
+.logo img{
+    background: transparent;
+
+    height: 50px;
+    color: red;
+}
+.sticky-header p{
+    margin:0px;
+}
+.sticky-header a img{
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- NAVBAR COLORS */
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--highlight-color);
+}
+.navbar-dark .navbar-brand {
+    color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+    .hide-on-screen{
+        display: none !important;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------ HERO SECTION */
+.hero {
+    background-image: url('./assets/hero.gif');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 720px;
+    padding: 50px 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ PROCESS SECTION */
+.process {
+    background-image: url('./assets/newspaper.jpg');
+    background-color: var(--accent-color);
+}
+
+.icon-box{
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    background-position: 15px 20px;
+    opacity: 1;
+    padding: 20px;
+    min-width: 125px;
+    min-height: 125px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.icon-box:hover {
+    background-image: url('./assets/ink.png');
+    box-shadow: 1px 1px 2px 2px var(--secondary-color);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    #four{
+    background-color: #32CD32;
+    background-position: -20px -80px;
+    }
+    #one{
+        background-color: #FFA500;
+        background-position: -30px -50px;
+    }
+    #two{
+        background-color: rgb(255, 75, 75);
+        background-position: -15px -20px;
+    }
+    #three{
+        background-color: lightseagreen;
+        background-position: 15px -20px;
+    }
+    .icon-box {
+        background-image: url('./assets/ink.png');
+        box-shadow: 1px 1px 2px 2px var(--secondary-color);
+        transform: scale(1.05);
+    }
+}
+
+#four:hover{
+    background-color: #32CD32;
+    background-position: -20px -80px;
+}
+#one:hover{
+    background-color: #FFA500;
+    background-position: -30px -50px;
+}
+#two:hover{
+    background-color: rgb(255, 75, 75);
+    background-position: -15px -20px;
+}
+#three:hover{
+    background-color: lightseagreen;
+    background-position: 15px -20px;
+}
+
+.icon{
+    width: 100%;
+    height: 100%;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ PRODUCTS SECTION */
+.product-card {
+    border: 2px dashed var(--secondary-color);
+    border-radius: 10px;
+    padding: 15px;
+    height: 100%;
+}
+
+/* Contain the image in the middle */
+.product-card img{
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+    image-rendering: auto;
+    background: linear-gradient(to bottom, rgb(36, 36, 36), rgb(161, 157, 170));
+    padding: 15px;
+    border-radius: 10px;
+    image-rendering: auto;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------ BLOG/FAQ SECTION */
+.blog-faq {
+    background-color: var(--secondary-color);
+    padding: 50px 20px;
+    color: var(--text-color);
+}
+
+.blog ul {
+  list-style: none; /* remove default bullets */
+  padding: 0;
+}
+
+.blog ul li {
+  position: relative;
+  padding-left: 1.5em; /* leave space for icon */
+}
+
+.blog ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 1em;
+  height: 1em;
+  background-image: url('./assets/newspaper-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.faq {
+    border-left: 2px solid var(--accent-color);
+    padding-left: 3%;
+}
+
+@media screen and (max-width: 768px) {
+  .faq{
+    border-left: none;
+  } 
+}
+
+.faq ul {
+  list-style: none; /* remove default bullets */
+  padding: 0;
+}
+.faq ul li {
+  position: relative;
+  padding-left: 1.5em; /* leave space for icon */
+}
+.faq ul li::before {
+  content: "? ";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 1em;
+  height: 1em;
+  /* background-image: url('./assets/newspaper-icon.png'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------ FOOTER SECTION */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px 0;
+    text-align: center;
+}
+.footer a {
+    color: var(--info-color);
+}
+.footer a:hover {
+    color: var(--highlight-color);
+}
