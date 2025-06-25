@@ -19,7 +19,7 @@ html{
     background-color: var(--primary-color);
 }
 a{
-    color: var(--info-color);
+    color: var(--info-color) !important;
     text-transform: capitalize;
 }
 a:visited{
